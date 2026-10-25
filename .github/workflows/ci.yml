@@ -10,6 +10,7 @@ on:
     tags:
       - '[0-9]*.*.*'
   pull_request:
+  release: 
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
